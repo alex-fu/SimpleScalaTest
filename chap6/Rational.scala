@@ -7,8 +7,8 @@ class Rational(n: Int, d: Int) {
 
     // 定义两个成员变量，默认是public
     private val g = gcd(n.abs, d.abs)
-    val numer = n/g
-    val denom = d/g
+    private val numer = n/g
+    private val denom = d/g
 
     // 从构造函数; 注意：每一个从构造函数的第一个动作都必须是调用同一个类里面的其他构造器
     def this(n: Int) = this(n, 1)
